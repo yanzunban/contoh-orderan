@@ -1,0 +1,349 @@
+/* --- RESET & BASE STYLE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #030816; /* Gelap Pekat / Navy Tua */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 20px 10px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    background: linear-gradient(180deg, #061026 0%, #030816 100%);
+    padding: 20px;
+    border-radius: 12px;
+    position: relative;
+    text-align: center;
+}
+
+.logo-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.brand h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.badge-id {
+    background-color: #00a2ff;
+    font-size: 0.7rem;
+    padding: 2px 5px;
+    border-radius: 4px;
+    vertical-align: middle;
+}
+
+.subtitle {
+    font-size: 0.65rem;
+    color: #6b7c96;
+    letter-spacing: 1px;
+}
+
+.menu-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.stock-badge {
+    background-color: rgba(0, 162, 255, 0.1);
+    color: #00d2ff;
+    border: 1px solid rgba(0, 162, 255, 0.3);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.hero-content .highlight {
+    color: #00d2ff;
+}
+
+.description {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    padding: 0 10px;
+}
+
+/* Tombol */
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: linear-gradient(90deg, #0072ff, #00d2ff);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 114, 255, 0.4);
+}
+
+.btn-secondary {
+    background-color: #0d1933;
+    color: #94a3b8;
+    border: 1px solid #1e293b;
+}
+
+/* Avatar Lingkaran Satoru */
+.profile-avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.profile-avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid #00d2ff;
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+    overflow: hidden;
+    background-color: #111;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- MAIN & DASHBOARD GRID --- */
+.dashboard-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+/* Card Produk */
+.product-card {
+    background-color: #071126;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #102244;
+}
+
+.product-image {
+    position: relative;
+    background-color: #111;
+}
+
+.product-image img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.id-tag {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-family: monospace;
+}
+
+.product-details {
+    padding: 15px;
+}
+
+.game-tag {
+    color: #38bdf8;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+.product-details h3 {
+    font-size: 0.95rem;
+    margin: 5px 0 10px;
+    font-weight: 600;
+}
+
+.specs {
+    font-size: 0.75rem;
+    color: #64748b;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #102244;
+    padding-top: 12px;
+}
+
+.price .label {
+    display: block;
+    font-size: 0.65rem;
+    color: #64748b;
+}
+
+.price .amount {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.btn-detail {
+    background-color: #0f172a;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    text-decoration: none;
+    border: 1px solid #334155;
+}
+
+/* Panel Admin */
+.admin-panel {
+    background-color: #071126;
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid #102244;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.admin-info h4 {
+    font-size: 0.85rem;
+}
+
+.badge-dash {
+    background-color: #00d2ff;
+    color: #000;
+    font-size: 0.6rem;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.admin-info p {
+    font-size: 0.65rem;
+    color: #64748b;
+}
+
+.logout-btn {
+    font-size: 0.75rem;
+    color: #f87171;
+    text-decoration: none;
+}
+
+/* Stat Box */
+.stat-box {
+    background-color: #0a1936;
+    padding: 12px 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-label {
+    display: block;
+    font-size: 0.65rem;
+    color: #64748b;
+    font-weight: 600;
+}
+
+.stat-count {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.green-text { color: #22c55e; }
+.red-text { color: #ef4444; }
+
+.circle-indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.green-bg { background-color: #22c55e; box-shadow: 0 0 8px #22c55e; }
+.red-bg { background-color: #ef4444; box-shadow: 0 0 8px #ef4444; }
+.stat-icon { font-size: 1.2rem; }
+
+/* Floating WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 999;
+}
+
+.whatsapp-icon {
+    width: 28px;
+    height: 28px;
+}
+
+/* --- RESPONSIVE UNTUK LAYAR LEBAR (TABLET/PC) --- */
+@media (min-width: 768px) {
+    .dashboard-section {
+        grid-template-columns: 1fr 1fr; /* Membagi dua kolom kanan kiri */
+    }
+    .cta-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .btn {
+        padding: 12px 30px;
+    }
+}
